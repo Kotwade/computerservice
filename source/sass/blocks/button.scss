@@ -15,4 +15,8 @@
   &:hover {
     background-color: rgba(#ecc924, 0.8);
   }
+
+  @media (max-width: 1050px) {
+    margin: 0 auto;
+  }
 }

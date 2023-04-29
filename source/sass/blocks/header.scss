@@ -13,10 +13,23 @@
   padding-top: 200px;
   padding-bottom: 120px;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 520px) {
+    padding-top: 50px;
+  }
 }
 
 .header__text {
   width: 50%;
+  margin-left: 20px;
+
+  @media (max-width: 1090px) {
+    width: 525px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 
 .header__text h1 {
@@ -25,6 +38,16 @@
   color: $white;
   line-height: 42px;
   text-transform: uppercase;
+
+  @media (max-width: 520px) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .header__text p {
@@ -32,4 +55,17 @@
   font-weight: 400;
   color: $white;
   line-height: 24px;
+
+  @media (max-width: 380px) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.header__wrapper img {
+  width: 525px;
+
+  @media (max-width: 1050px) {
+    margin: 0 auto;
+  }
 }
